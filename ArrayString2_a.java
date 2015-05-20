@@ -1,6 +1,6 @@
 package Training;
 
-public class ArrayString2 {
+public class ArrayString2_a {
 
 	public static char[] reverse(String s) {
 
