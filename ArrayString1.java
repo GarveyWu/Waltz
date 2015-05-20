@@ -1,29 +1,27 @@
 package Training;
 
-public class TestArrayList {
+public class ArrayString1 {
 
-	public boolean ifUnique(String s) {
+	public static boolean ifUnique(String s) {
 
 		char[] ch = s.toCharArray();
-		boolean check = true;
 
 		for (int i = 0; i < ch.length - 1; i++) {
 			for (int j = i + 1; j < ch.length; j++) {
 				if (ch[i] == ch[j]) {
 
-					return check = false;
+					return false;
 				}
 			}
 		}
-		return check;
-
+		return true;
 	}
 
 	public static void main(String[] args) {
 
-		String s = "&^&abcd";
+		String s = "love";
 
-		System.out.println(new TestArrayList().ifUnique(s));
+		System.out.println(ifUnique(s));
 
 	}
 }
