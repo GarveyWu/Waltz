@@ -7,6 +7,7 @@ public class StackandQueue2 {
 	static int stackSize = 20;
 	static int[] buffer = new int[stackSize];
 	static int stackPointer = -1;
+	
 	static int[] minBuffer = new int[stackSize];
 	static int minPointer = -1;
 
@@ -18,7 +19,7 @@ public class StackandQueue2 {
 		stackPointer++;
 		if (minPointer == -1) {
 			minPointer++;
-			minBuffer[minPointer] = value;
+			minBuffer[minPointer] = Integer.MAX_VALUE;
 		}
 		if (value <= minBuffer[minPointer]) {
 			minPointer++;
